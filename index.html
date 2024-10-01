@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> Mi Primer Sitio Web</title>
+        <h1>La Pagina del Mostro</h1>
+    </head>
+    <body>
+        <section>
+            <article>   
+                <div>
+                    <h4>el mounstro del bosque es el mas temido de noterhand. 
+                    bajo las noches de luna llena el se aparece con una 
+                    nebulosa oscura para perpetrar los peores deseos de las almas
+                    en pena y con sed de venganza, no te acerques por esos lugares, 
+                    es esta siempre al acecho<h4>
+                    <img src="Shaddy.jpg">
+                    <p>No lo mires a los ojos!</p>
+                </div>
+            </article>    
+        </section>    
+        
+        <h3>Formulario para ir al bosque</h3>
+            <p>antes que nada, sepa que el viaje es de noche y no se garantiza su seguridad</p>
+        
+        <form>
+            <div>
+                <label for="nombre" > Nombre: </label>
+                <input type="text" name="nombre"/>
+            </div>
+            
+            <div>
+                <label for= "edad" > Edad: </label>
+                <input type="number" />
+            </div>
+
+          
+
+        </form>
+
+          <button id="miBoton">Enviar</button>
+            <img id="miImagen" src="mostrito.avif" alt="Descripción de la imagen" style="display: none;">
+
+        <script>
+            document.getElementById("miBoton").addEventListener("click", function() {
+                document.getElementById("miImagen").style.display = "block"; // Muestra la imagen
+                });
+        </script>
+    </body>
+</html>
